@@ -1,4 +1,5 @@
-## These functions cache the inverse of a matrix
+## The two functions below cache the inverse of a matrix
+
 
 ## This function creates a special "list" object that can cache its inverse
 makeCacheMatrix <- function(x = matrix()) 
@@ -6,7 +7,7 @@ makeCacheMatrix <- function(x = matrix())
    # initialize i which holds the value of the inverse of a matrix
    i <- NULL
    
-   # set is used to assign a value to x outisde current environment
+   # set is used to assign value of y to x outisde current environment
    set <- function(y) {
       x <<- y
       i <<- NULL
